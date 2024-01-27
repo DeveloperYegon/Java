@@ -43,5 +43,94 @@ public class controlStructures{
         }else{
                     System.out.println("You are not Leaving in India");
         }
+
+
+            //SWITCH statements
+        int number=2;
+        switch (number){
+            case 0:
+                System.out.println("The number is 0");
+            break;
+            case 1:
+                System.out.println("The number is 1");
+            break;
+            default:
+                System.out.println(number);
+            
+        }
+        //loop statements
+
+        //for loop
+        int sum=0;
+        for(int j=1;j<=10;j++){
+            sum=sum+j;
+        }
+        System.out.println("The sum of the first 10 natural numbers is:" +sum);
+
+
+        //for each loop
+        String[] names={"Java","C","C++","Python","JavaScript"};
+        System.out.println("Printing array items");
+        for(String name:names){
+            System.out.println(name);
+        }
+
+        //while loop
+        int i=0;
+        System.out.println("Print the list of first 10 even numbers\n");
+        while(i<=10){
+            System.out.println(i);
+            i=i+2;
+        }
+
+        //do--while loop
+        int n=0;
+        System.out.println("Print the list of first 10 even numbers\n");
+        do{
+            System.out.println(n);
+            n=n+2;
+        }while(n<=10);
+        
+         System.out.println("jump statements");
+        
+        //jump statements
+        ////////////////////break
+        for(int a=0;a<=10;a++){
+            System.out.println(a);
+            if(a==6){
+                break;
+            }
+        }
+        System.out.println("labeled break");
+        //break statement example with labeled for loop             
+                 a: 
+                for(int b = 0; b<= 10; b++) { 
+                        b: 
+                        for(int q = 0; q<=15;q++) { 
+                            c: 
+                            for (int k = 0; k<=20; k++) { 
+                                System.out.println(k); 
+                                if(k==5) { 
+                                break a; 
+                                } 
+                             } 
+                        } 
+                        
+                } 
+
+
+
+
+System.out.println("jump statements continue");
+                //continue statement
+
+        for(int w = 0; w<= 2; w++){
+                for (int r = i; r<=5; r++) {
+                    if(w == 4) {
+                        continue;
+                    }
+                    System.out.println(w);
+                }
+         }
     }
 }

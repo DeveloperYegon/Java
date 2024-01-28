@@ -123,13 +123,12 @@ public class controlStructures{
 
 System.out.println("jump statements continue");
                 //continue statement
-
         for(int w = 0; w<= 2; w++){
                 for (int r = i; r<=5; r++) {
                     if(w == 4) {
                         continue;
                     }
-                    System.out.println(w);
+                    System.out.println(r);
                 }
          }
     }
